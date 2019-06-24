@@ -3,3 +3,13 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  p API URL's you can connect to get contact details
+  a(href="http://localhost:3000/api/contacts")   GET Contacts 
+  br
+  a(href="http://localhost:3000/api/contacts")   POST Contact 
+  br
+  a(href="http://localhost:3000/api/contacts/1")   GET Contact by Id (can be from 1 to any number)
+  br
+  a(href="http://localhost:3000/api/contacts/1")   PUT Contact by Id
+  br
+  a(href="http://localhost:3000/api/contacts/1")   DELETE Contact by Id (hard delete)

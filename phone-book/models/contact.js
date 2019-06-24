@@ -17,7 +17,8 @@ var Contact = new Schema({
   createdBy : String,
   createdOn : {type: Date, default: Date.now},
   updatedBy : String,
-  updatedOn : {type: Date, default: Date.now}
+  updatedOn : {type: Date, default: Date.now},
+  isActive: Boolean
 });
 
 Contact.plugin(autoIncrement.plugin, {model: 'Contact', field: 'contactId', startAt: 1});
